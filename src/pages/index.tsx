@@ -1,6 +1,10 @@
 import Head from "next/head";
 import { Inter, Roboto } from "@next/font/google";
+import Image from "next/image";
 
+import profileImage from "@/styles/images/me_cover.jpg";
+import superBg from "@/styles/images/super-bg.jpg";
+import Testimonials from "./components/Testimonials";
 
 const inter = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -15,85 +19,144 @@ export default function Home() {
       <body>
         <header>
           <nav className="Navigation">
-            <img className="LOGO" src="" alt="MM"></img>
-           
-            <div><a href="#about">About</a> </div>
-              <div>  <a href="#service">Services</a></div>
-              <div> <a href="#portfolio">Portfolio</a> </div>
-              <div><a href="#contact">Contact</a> </div>
-            <div> <button className="Contact-me"> Contact Me</button></div>
-          <div>
-            
-          </div>
+            <div className="links--left">
+              <a href="#" className="logo">
+                MM
+              </a>
+
+              <a href="#about">About</a>
+              <a href="#service">Services</a>
+              <a href="#portfolio">Portfolio</a>
+            </div>
+
+            <button className="contact-me"> Contact Me</button>
           </nav>
-
-        <div className="two-columns">
-        <h3>I'm Masibulele</h3>
-              <h1>Aspiring Everything Engineer</h1>
-           
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                voluptates porro aliquid?{" "}
-              </p>{" "}
-              Lorem ipsum dolor sit equisor to now.
-              <p />
-              <button className="btn-primary">Let's Work</button>
-                <img
-                  src="IMG_20220819_115032_515.jpg"
-                  alt="portfolio picture"/>
-         
+          <div className="super-bg">
+            <Image
+              alt="People coding"
+              width={1366}
+              height={766}
+              src={superBg}
+            />
           </div>
 
-          <div></div>
+          <section className="introduction">
+            <div className="two-columns">
+              <div>
+                <h3>I'm Masibulele</h3>
+              </div>
+              <div>
+                <h1>
+                  Aspiring <br /> Everything <br /> Engineer
+                </h1>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consec <br /> tetur adipisicing elit.
+                Eaque voluptates porro aliquid?
+              </p>
+
+              <div>
+                <button className="btn-work">Let's Work</button>
+              </div>
+            </div>
+            <div className="profile-img">
+              <Image className="real-img" src={profileImage} alt="" />
+              <Image className="shadow-img" src={profileImage} alt="" />
+            </div>
+          </section>
         </header>
 
         <section className="about-me">
-          <div>
-            <img src="" alt="CV-Picture" />
-            <h3>About Me</h3>
+          <div className="cv-img">
+            <div className="background-box"></div>
+            <div className="forefront-box"></div>
+            <div className="cv-circle"></div>
           </div>
-          <h3>
-            Working <br /> With Passion
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-            error impedit nostrum aperiam <br /> consequuntur reprehenderit
-            nihil id magni numquam harum!
-          </p>
-          <button className="My Cv">DOWNLOAD CV</button>
+          <div className="about">
+            <h3>About Me</h3>
+
+            <h1>
+              Working <br /> With Passion
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+              error impedit nostrum aperiam <br /> consequuntur reprehenderit
+              nihil id magni numquam harum!
+            </p>
+            <section className="download">
+              <button className="btn-download">DOWNLOAD CV</button>
+            </section>
+          </div>
         </section>
-        <section className="Services">
-          <div>
+        <section className="services">
+          <div className="specialties">
             <h3>Services</h3>
             <h2>What Can I Do</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.
               In ratione dolore itaque.
             </p>
+            <section className="my-languages">
+              <div className="right-langs">
+                <div className="lang1"></div>
+                <div className="lang2"></div>
+              </div>
+              <div className="left-langs">
+                <div className="lang3"></div>
+                <div className="lang4"></div>
+              </div>
+            </section>
           </div>
-          <div className="squares"></div>
-          <div className="circles"></div>
         </section>
 
         <section className="features">
-          <h3>Features</h3>
-          <h2>Why Me?</h2>
-          <div className="jobs"></div>
+          <div className="why-me">
+            <h3>Features</h3>
+            <h2>Why Me?</h2>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />{" "}
+              Voluptatibus deleniti molestias cum veritatis debitis!
+            </p>
+          </div>
+        </section>
+        <section className="jobs">
+          <div className="job1">
+            <p>unique stack</p>
+          </div>
+
+          <div className="job2">
+            <p> stack overflow</p>
+          </div>
+
+          <div className="job3">
+            <p>all stacks</p>
+          </div>
         </section>
 
         <section className="my-portfolio">
-          <h4>My Portfolio</h4>
-          <h2>Favourite Projects</h2>
-          <h5>I dont know either </h5>
-          <div className="project1"></div>
-          <button className="btn-AllPortfolio">ALL PORTFOLIO</button>
-        </section>
+          <section className="p-headers">
+            <h4>My Portfolio</h4>
+            <h2>Favourite Projects</h2>
+            <h5>I dont know either </h5>
+          </section>
+          <section className="project-imgs">
+            <div className="right-ps">
+              <div className="project1"></div>
+              <div className="project2"></div>
+            </div>
+            <div className="left-ps">
+              <div className="project3"></div>
+              <div className="project4"></div>
+            </div>
+          </section>
 
-        <section className="testimonials">
-<h3>Testiompnials</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Provident dicta voluptatem porro quam voluptates aperiam in saepe fuga repellat! <br /> Praesentium impedit vel saepe alias doloribus?</p>
+          <section className="btn-prof">
+            <button className="btn-all">ALL PORTFOLIO</button>
+          </section>
         </section>
-        
+        <Testimonials />
       </body>
     </>
   );

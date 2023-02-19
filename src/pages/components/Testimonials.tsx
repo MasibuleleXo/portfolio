@@ -1,29 +1,30 @@
-import { useState } from "react";
+import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Testimonials() {
   const [testimonials, settestimonials] = useState([
     {
-      name: "Lindo Manana",
-      img: "",
+      name: 'Lindo Manana',
+      img: '',
       comment: {
-        title: "Lindo Title",
-        description: "lindo Body",
+        title: 'Lindo Title',
+        description: 'lindo Body',
       },
     },
     {
-      name: "Simo Ngquseka",
-      img: "",
+      name: 'Simo Ngquseka',
+      img: '',
       comment: {
-        title: "Simo Title",
-        description: "Simo description",
+        title: 'Simo Title',
+        description: 'Simo description',
       },
     },
     {
-      name: "Cebo Mzize",
-      img: "",
+      name: 'Cebo Mzize',
+      img: '',
       comment: {
-        title: "Cebo Title",
-        description: "cebo description",
+        title: 'Cebo Title',
+        description: 'cebo description',
       },
     },
   ]);
@@ -31,10 +32,10 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(testimonials[1]);
 
   return (
-    <div>
+    <>
       <section className="testimonials">
         <div className="sect-test">
-          <h3>Testiompnials</h3>
+          <h3>Testimonials</h3>
           <h1> {current.comment.title}</h1>
           <div className="decor-circle"></div>
           <p>{current.comment.description}</p>
@@ -43,18 +44,19 @@ export default function Testimonials() {
       </section>
 
       <section className="clients">
-        {testimonials.map((item) => (
+        {testimonials.map((item, index) => (
           <div
+            key={index}
             className="client"
             onMouseOver={() => {
               setCurrent(item);
             }}
           >
-            <img src={item.img} alt="" />
+            <Image src={item.img} alt="image" />
             <h3 className="client-name">{item.name}</h3>
           </div>
         ))}
       </section>
-    </div>
+    </>
   );
 }

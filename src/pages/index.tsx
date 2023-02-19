@@ -45,7 +45,7 @@ export default function Home() {
           <section className="introduction">
             <div className="two-columns">
               <div>
-                <h3>I'm Masibulele</h3>
+                <h3>I&apos;m Masibulele</h3>
               </div>
               <div>
                 <h1>
@@ -59,7 +59,7 @@ export default function Home() {
 
               <div>
                 <button type="button" className="btn-work">
-                  Let's Work
+                  Let&apos;s Work
                 </button>
               </div>
             </div>

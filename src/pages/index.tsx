@@ -83,9 +83,16 @@ export default function Home() {
               Working <br /> With Passion
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-              error impedit nostrum aperiam <br /> consequuntur reprehenderit
-              nihil id magni numquam harum!
+          I am a final year student pursuing a Diploma in ICT Application Development, 
+          <br /> I Have a deep passion for technology and innovation. Throughout my academic journey, 
+          <br />I've gained a strong foundation in programming languages such as Java,Oracle Apex,VB.Net, MySQL and Python,
+          <br /> as well as hands-on experience in developing web pages. I have a keen interest in solving real-world problems through technology, <br />
+          i have undertaken some personal projects that have allowed me to apply my knowledge in practical settings. I am a highly motivated and adaptable individual, 
+          <br />always eager to learn and explore new challenges in the ever-evolving field of technology.
+          <br />My most significant achievement so far has been being a part of a group that developed a Desktop Application for our school Project. <br />
+           The App’s purpose was to capture unemployed individuals and old age individuals from rural areas in the Eastern Cape into a database that would be made available to all recruiters across the country. <br />
+           This project not only helped improve my technical skills but also taught me the importance of addressing real-world challenges through technology. It was a defining moment in my career, showcasing my ability to lead a team,<br />
+            solve complex problems, and create meaningful impact.
             </p>
             <section className="download">
               <button type="button" className="btn-download">
